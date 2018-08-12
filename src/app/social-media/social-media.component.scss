@@ -1,0 +1,11 @@
+.social-media {
+    color: slategray;
+    
+    i {
+        padding: 1rem;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACV,KAAK,EAAE,SAAS;EAEhB,eAAE;IACE,OAAO,EAAE,IAAI;IAEb,qBAAQ;MACJ,KAAK,EAAE,KAAK",
+"sources": ["social-media.component.scss"],
+"names": [],
+"file": "social-media.component.css"
+}
