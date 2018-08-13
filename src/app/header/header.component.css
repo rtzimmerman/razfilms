@@ -7,14 +7,16 @@
   background-color: black;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 1px 3px 25px #888888; }
   .header .logo p {
     padding-left: 2rem;
     font-size: 2rem;
     color: white; }
   .header .header-right {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding-right: 2rem; }
     .header .header-right nav {
       color: slategray; }
       .header .header-right nav ul {

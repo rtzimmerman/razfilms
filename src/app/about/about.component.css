@@ -1,5 +1,7 @@
 .about {
-  margin: auto;
+  padding: 10rem;
   display: flex; }
+  .about .about-stub {
+    padding: 3rem; }
 
 /*# sourceMappingURL=about.component.css.map */
