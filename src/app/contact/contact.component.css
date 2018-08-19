@@ -1,7 +1,10 @@
 .contact {
-  width: 50%;
+  margin: 0;
   padding: 4rem;
   background-color: whitesmoke; }
+  @media screen and (max-width: 792px) {
+    .contact {
+      padding-left: 0; } }
   .contact .form-input {
     margin-left: 2rem;
     width: 100%;
@@ -15,10 +18,14 @@
     border: 1px solid #ccc;
     border-radius: 4px; }
   .contact #contact-form {
+    width: 50%;
+    margin: 3rem;
     display: flex;
     flex-direction: column;
-    padding: 5rem;
-    width: 50%; }
+    padding: 3rem 0 0 0; }
+    @media screen and (max-width: 792px) {
+      .contact #contact-form {
+        width: 100%; } }
     .contact #contact-form label {
       display: flex;
       justify-content: space-between;

@@ -54,8 +54,9 @@
             }
         }
     }
-    .hamburger-icon i {
-        color: white;
+    .hamburger-icon {
+        position: fixed;
+        right: 0;
         font-size: 2rem;
     }   
 }

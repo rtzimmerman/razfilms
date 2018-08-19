@@ -36,8 +36,9 @@
           list-style-type: none; }
           .header .header-right nav ul li:hover {
             color: white; }
-  .header .hamburger-icon i {
-    color: white;
+  .header .hamburger-icon {
+    position: fixed;
+    right: 0;
     font-size: 2rem; }
 
 a {

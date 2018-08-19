@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { FilmsComponent } from './films/films.component'
+import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    SlideMenuModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
