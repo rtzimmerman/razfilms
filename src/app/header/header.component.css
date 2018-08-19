@@ -13,6 +13,14 @@
     padding-left: 2rem;
     font-size: 2rem;
     color: white; }
+  @media (max-width: 792px) {
+    .header .header-right {
+      visibility: hidden; }
+    .header .hamburger-icon {
+      visibility: visible; } }
+  @media (min-width: 793px) {
+    .header .hamburger-icon {
+      visibility: hidden; } }
   .header .header-right {
     display: flex;
     align-items: center;
@@ -28,6 +36,9 @@
           list-style-type: none; }
           .header .header-right nav ul li:hover {
             color: white; }
+  .header .hamburger-icon i {
+    color: white;
+    font-size: 2rem; }
 
 a {
   color: slategray;

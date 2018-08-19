@@ -3,5 +3,7 @@
   display: flex; }
   .about .about-stub {
     padding: 3rem; }
+    .about .about-stub p {
+      font-size: 2rem; }
 
 /*# sourceMappingURL=about.component.css.map */

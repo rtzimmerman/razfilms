@@ -16,6 +16,20 @@
             color: white;
         }
     }
+    @media (max-width: 792px){
+        .header-right {
+            visibility: hidden;
+        }
+        .hamburger-icon {
+            visibility: visible;
+        }
+    }
+
+    @media (min-width: 793px){
+        .hamburger-icon {
+            visibility: hidden;
+        }
+    }
     .header-right {
          display: flex;
          align-items: center;
@@ -39,6 +53,10 @@
                 
             }
         }
+    }
+    .hamburger-icon i {
+        color: white;
+        font-size: 2rem;
     }   
 }
 

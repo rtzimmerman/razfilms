@@ -3,5 +3,8 @@
     display: flex;
     .about-stub {
         padding: 3rem;
+        p {
+            font-size: 2rem;
+        }
     }
 }

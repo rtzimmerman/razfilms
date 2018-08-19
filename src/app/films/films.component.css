@@ -1,0 +1,68 @@
+.films {
+  padding: 10rem; }
+  @media screen and (max-width: 888px) {
+    .films {
+      padding: 2rem 0 2rem 0; }
+      .films .feature-film {
+        flex-direction: column;
+        margin: auto; }
+        .films .feature-film h1 {
+          text-align: center; }
+      .films .trailer {
+        height: 0; } }
+  .films .feature-film {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    border: 2px solid slategrey;
+    border-radius: 0.5rem; }
+    .films .feature-film .trailer iframe {
+      width: 560px;
+      height: 315px; }
+    .films .feature-film aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .films .feature-film aside .movie-poster img {
+        padding: 2rem;
+        width: 150px;
+        height: 150px; }
+      .films .feature-film aside .purchase-links {
+        text-align: center; }
+        .films .feature-film aside .purchase-links ul {
+          margin: 0;
+          display: inline-flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 2rem; }
+          .films .feature-film aside .purchase-links ul li {
+            list-style-type: none; }
+            .films .feature-film aside .purchase-links ul li a i {
+              color: black; }
+        .films .feature-film aside .purchase-links img {
+          width: 50%;
+          height: 50%; }
+    .films .feature-film main {
+      display: flex;
+      flex-direction: column; }
+      .films .feature-film main h1 {
+        text-shadow: 2px 2px gainsboro; }
+      .films .feature-film main article {
+        color: black; }
+
+@media screen and (max-width: 920px) {
+  .films {
+    padding: 7rem 0 7rem 0; }
+    .films main {
+      width: 100%; }
+    .films .trailer {
+      height: 0; }
+      .films .trailer iframe {
+        visibility: hidden;
+        height: 0; } }
+@media screen and (max-width: 1230px) {
+  .films {
+    width: 100%;
+    padding: 7rem 0 7rem 0; } }
+
+/*# sourceMappingURL=films.component.css.map */

@@ -1,0 +1,103 @@
+.films {
+    @media screen and (max-width: 888px) {
+        padding: 2rem 0 2rem 0;
+        .feature-film {
+            flex-direction: column;
+            margin: auto;
+            h1 {
+                text-align: center;
+            }
+        }
+        .trailer {
+            height: 0;
+        }
+    }
+    padding: 10rem;
+    .feature-film {
+        margin: 2rem;
+        padding: 2rem;
+        display: flex;
+        border: 2px solid slategrey;
+        border-radius: 0.5rem;
+
+        .trailer {
+            iframe {
+                width: 560px;
+                height: 315px;
+            }
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .movie-poster {
+                img {
+                    padding: 2rem;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .purchase-links {
+                text-align: center;
+                ul {
+                    margin: 0;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 2rem;
+                    li {
+                        list-style-type: none;
+                        a i{
+                            color: black;
+                        }
+                        
+                    }
+                }
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+    }
+        main{
+            display: flex;
+            flex-direction: column;
+            h1 {
+                text-shadow:  2px 2px gainsboro;
+            }
+            article {
+                color: black;
+            }
+        }
+       
+    }
+}
+
+@media screen and (max-width: 920px){
+    .films {
+    padding: 7rem 0 7rem 0; 
+        main{
+            width: 100%;
+        }
+        .trailer {
+            height: 0;
+            iframe {
+                visibility: hidden;
+                height: 0;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 1230px){
+    .films {
+        width: 100%;
+        padding: 7rem 0 7rem 0;
+        .trailer {
+            iframe {
+                // width: 20rem;
+                // height: 20rem;
+            }
+        }
+    }
+}
