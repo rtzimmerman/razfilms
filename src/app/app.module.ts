@@ -13,6 +13,7 @@ import { FilmsComponent } from './films/films.component'
 import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'films', component: FilmsComponent },
   { path: 'about', component: AboutComponent },
