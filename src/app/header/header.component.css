@@ -12,7 +12,8 @@
   .header .logo p {
     padding-left: 2rem;
     font-size: 2rem;
-    color: white; }
+    color: white;
+    text-shadow: 3px 2px 4px grey; }
   @media (max-width: 792px) {
     .header .header-right {
       visibility: hidden; }
