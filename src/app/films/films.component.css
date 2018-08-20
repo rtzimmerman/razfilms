@@ -14,30 +14,34 @@
     margin: 2rem;
     padding: 2rem;
     display: flex;
-    border: 2px solid slategrey;
+    border: 4px solid slategrey;
     border-radius: 0.5rem; }
     .films .feature-film .trailer iframe {
       width: 560px;
       height: 315px; }
     .films .feature-film aside {
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
       .films .feature-film aside .movie-poster img {
-        padding: 2rem;
-        width: 150px;
-        height: 150px; }
+        border: 1px solid black;
+        padding: 0;
+        width: 175px;
+        height: 200px; }
       .films .feature-film aside .purchase-links {
         text-align: center; }
         .films .feature-film aside .purchase-links ul {
           margin: 0;
-          display: inline-flex;
-          justify-content: space-between;
+          padding: 0;
+          display: flex;
+          justify-content: space-evenly;
           align-items: center;
           font-size: 2rem; }
           .films .feature-film aside .purchase-links ul li {
             list-style-type: none; }
             .films .feature-film aside .purchase-links ul li a i {
+              padding: 1rem;
               color: black; }
         .films .feature-film aside .purchase-links img {
           width: 50%;
@@ -46,7 +50,8 @@
       display: flex;
       flex-direction: column; }
       .films .feature-film main h1 {
-        text-shadow: 2px 2px gainsboro; }
+        font-size: 2rem;
+        text-shadow: 2px 2px 2px gainsboro; }
       .films .feature-film main article {
         color: black; }
 
@@ -55,6 +60,8 @@
     padding: 7rem 0 7rem 0; }
     .films main {
       width: 100%; }
+    .films aside ul {
+      flex-direction: column; }
     .films .trailer {
       height: 0; }
       .films .trailer iframe {
@@ -63,6 +70,8 @@
 @media screen and (max-width: 1230px) {
   .films {
     width: 100%;
-    padding: 7rem 0 7rem 0; } }
+    padding: 7rem 0 7rem 0; }
+    .films .trailer iframe {
+      border: 1px solid grey; } }
 
 /*# sourceMappingURL=films.component.css.map */
