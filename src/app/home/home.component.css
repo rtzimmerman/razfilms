@@ -1,6 +1,5 @@
 .home {
-  background-image: url("../../assets/images/DSC_1377.jpg");
-  background-repeat: no-repeat;
+  background: url("../../assets/images/DSC_1377.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
