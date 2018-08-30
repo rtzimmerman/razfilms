@@ -18,8 +18,7 @@ app.get('/*', (req,res) => {
 app.listen(process.env.PORT || 5001);
 
 app.post('/send-email', (req, res) => {
-  //console.log(req);
-  console.log(req.body);
+
   const transporter = nodemailer.createTransport({
     host: EMAIL_HOST,
     port: EMAIL_PORT,
@@ -32,14 +31,14 @@ app.post('/send-email', (req, res) => {
   var mailOptions = {
     from: 'zim2007@gmail.com', // sender address
     to: 'zimmer_32@hotmail.com', // list of receivers
-    subject: 'Email Example', // Subject line
-    text: 'peace'//, // plaintext body
+    subject: 'Razfilms.com Contact Form Submission', // Subject line
+    text: req.body.message//, // plaintext body
     // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
   };
 
   transporter.sendMail(mailOptions);
   console.log('email sent');
-  res.sendStatus(200);
+  res.redirect('/contact');
 });
 
 console.log('Server running on port: ', process.env.PORT);
