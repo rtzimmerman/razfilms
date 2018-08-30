@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Transporter, SendMailOptions } from 'nodemailer';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  handleClick = () => {
+    console.log('clicked');
+  }
 
   constructor() { }
 
