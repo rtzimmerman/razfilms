@@ -1,11 +1,12 @@
 .contact {
   height: 100%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
   padding: 4rem;
   background-color: whitesmoke; }
   @media screen and (max-width: 792px) {
     .contact {
-      padding: 2rem;
+      padding: 2rem 0;
       margin: 0; } }
   .contact .form-input {
     display: block;
@@ -53,9 +54,7 @@
     flex-direction: column; }
     @media screen and (max-width: 792px) {
       .contact #contact-form {
-        width: 100%; }
-        .contact #contact-form textarea {
-          width: 50%; } }
+        width: 100%; } }
     .contact #contact-form label {
       display: flex;
       justify-content: space-between;
