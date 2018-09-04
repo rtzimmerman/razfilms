@@ -60,6 +60,8 @@
       justify-content: space-between;
       padding: 2rem;
       font-weight: 700; }
+      .contact #contact-form label .required {
+        color: red; }
     .contact #contact-form .submit-container {
       display: flex;
       justify-content: flex-end;

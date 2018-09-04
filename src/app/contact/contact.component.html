@@ -1,20 +1,20 @@
 <section class="contact">
   <form id="contact-form" method="POST" action="send-email  ">
     <label>
-      Name:
-      <input class="form-input" name="name" type="text" />
+      Name:<span class="required">*</span>
+      <input class="form-input" name="name" type="text" required/>
+    </label>
+    <label>
+      Email:<span class="required">*</span>
+      <input class="form-input" name="email" type="email" required/>
     </label>
     <label>
       Phone:
       <input class="form-input" name="phone" type="text" />
     </label>
     <label>
-      Email:
-      <input class="form-input" name="email" type="email" />
-    </label>
-    <label>
-      Message:
-      <textarea name="message"></textarea>
+      Message:<span class="required">*</span>
+      <textarea name="message" required></textarea>
     </label>
     <div class="submit-container">
       <input class="submit-btn" name="Submit" type="submit"/>
