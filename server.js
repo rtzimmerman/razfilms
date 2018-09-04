@@ -35,14 +35,19 @@ app.post('/send-email', (req, res) => {
     to: TO_EMAIL,
     subject: 'Razfilms.com Contact Form Submission', 
     html: `<b>Razfilms.com Contact Form Submission</b>
-          <p>From: ${req.body.name} Phone: ${req.body.phone} Email: ${req.body.email}</p>
-          <p>${req.body.message}</p>`
+          <p>From: ${req.body.name}</p> 
+          <p>Email: ${req.body.email}</p>
+          <p>Phone: ${req.body.phone}</p> 
+          <p>Message: ${req.body.message}</p>`
   };
-
   transporter.sendMail(mailOptions).catch((err) => {
     console.log(err);
   });
   console.log('email sent');
+  console.log(`${req.body.name}`);
+  console.log(`${req.body.email}`);
+  console.log(`${req.body.phone}`);
+  console.log(`${req.body.message}`);
   res.redirect('/contact');
 });
 
