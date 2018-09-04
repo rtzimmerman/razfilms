@@ -8,6 +8,8 @@ const EMAIL_HOST = process.env.EMAIL_HOST;
 const EMAIL_PORT = process.env.EMAIL_PORT;
 const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
+const FROM_EMAIL = process.env.FROM_EMAIL;
+const TO_EMAIL = process.env.TO_EMAIL;
 
 app.use(express.static(__dirname+'/dist/my-app'));
 
@@ -29,11 +31,12 @@ app.post('/send-email', (req, res) => {
   });
 
   var mailOptions = {
-    from: 'robert.t.zimmerman@comcast.net', // sender address
-    to: ['zimmer_32@hotmail.com'], // list of receivers
-    subject: 'Razfilms.com Contact Form Submission', // Subject line
-    //text: req.body.message//, // plaintext body
-    html: `<b>${req.body.subject}</b><p>From: ${req.body.name} ${req.body.phone} ${req.body.email}</p><p>${req.body.message}</p>` // You can choose to send an HTML body instead
+    from: FROM_EMAIL,
+    to: TO_EMAIL,
+    subject: 'Razfilms.com Contact Form Submission', 
+    html: `<b>Razfilms.com Contact Form Submission</b>
+          <p>From: ${req.body.name} Phone: ${req.body.phone} Email: ${req.body.email}</p>
+          <p>${req.body.message}</p>`
   };
 
   transporter.sendMail(mailOptions).catch((err) => {
