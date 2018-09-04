@@ -29,14 +29,16 @@ app.post('/send-email', (req, res) => {
   });
 
   var mailOptions = {
-    from: 'zim2007@gmail.com', // sender address
-    to: 'zimmer_32@hotmail.com', // list of receivers
+    from: 'info@razfilms.com', // sender address
+    to: ['zimmer_32@hotmail.com'], // list of receivers
     subject: 'Razfilms.com Contact Form Submission', // Subject line
-    text: req.body.message//, // plaintext body
-    // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
+    //text: req.body.message//, // plaintext body
+    html: `<b>${req.body.subject}</b><p>From: ${req.body.name} ${req.body.phone} ${req.body.email}</p><p>${req.body.message}</p>` // You can choose to send an HTML body instead
   };
 
-  transporter.sendMail(mailOptions);
+  transporter.sendMail(mailOptions).catch((err) => {
+    console.log(err);
+  });
   console.log('email sent');
   res.redirect('/contact');
 });
