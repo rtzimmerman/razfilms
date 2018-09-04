@@ -29,7 +29,7 @@ app.post('/send-email', (req, res) => {
   });
 
   var mailOptions = {
-    from: 'info@razfilms.com', // sender address
+    from: 'robert.t.zimmerman@comcast.net', // sender address
     to: ['zimmer_32@hotmail.com'], // list of receivers
     subject: 'Razfilms.com Contact Form Submission', // Subject line
     //text: req.body.message//, // plaintext body
