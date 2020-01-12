@@ -35,14 +35,17 @@
           margin: 0;
           padding: 0;
           display: flex;
-          justify-content: space-evenly;
+          flex-direction: column;
           align-items: center;
-          font-size: 2rem; }
+          font-size: 2rem;
+          padding-bottom: 1rem; }
           .films .feature-film aside .purchase-links ul li {
+            font-size: 1rem;
             list-style-type: none; }
             .films .feature-film aside .purchase-links ul li a i {
-              padding: 1rem;
               color: black; }
+          .films .feature-film aside .purchase-links ul li:nth-child(even) {
+            padding-bottom: 1rem; }
         .films .feature-film aside .purchase-links img {
           width: 50%;
           height: 50%; }
